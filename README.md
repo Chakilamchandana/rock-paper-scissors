@@ -1,4 +1,4 @@
-# rock-paper-scissors
+# rock-paper-scissors - https://rpsduel.netlify.app/
 A simple Rock-Paper-Scissors game with React
 
 **Overview of Rock, Paper, Scissors Game App**
