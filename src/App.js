@@ -14,12 +14,12 @@ export default function App() {
   const [state, setState] = useState(initialState);
 
   function gameLogic(playerVal, computerVal) {
-    if (playerVal == computerVal) {
+    if (playerVal === computerVal) {
       return 0;
     } else if (
-      (playerVal == "ROCK" && computerVal == "SCISSORS") ||
-      (playerVal == "PAPER" && computerVal == "ROCK") ||
-      (playerVal == "SCISSORS" && computerVal == "PAPER")
+      (playerVal === "ROCK" && computerVal === "SCISSORS") ||
+      (playerVal === "PAPER" && computerVal === "ROCK") ||
+      (playerVal === "SCISSORS" && computerVal === "PAPER")
     ) {
       return 1;
     } else {
@@ -39,7 +39,7 @@ export default function App() {
         computerVal: computerChoice,
         playerScore: prevState.playerScore + 1,
       }));
-    } else if (val == -1) {
+    } else if (val === -1) {
       setState((prevState) => ({
         ...prevState,
         playerVal: playerChoice,
