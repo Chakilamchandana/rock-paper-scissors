@@ -74,6 +74,7 @@ export default function App() {
 
   function determineWinner() {
     const scores = endGame();
+    console.log(scores);
   }
 
   return (
